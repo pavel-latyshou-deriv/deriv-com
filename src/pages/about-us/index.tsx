@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { localize, WithIntl } from 'components/localization'
-import Layout from 'components/layout/layout'
-import { SEO } from 'components/containers'
-import device from 'themes/device'
 import MakeTrading from './_MakeTrading'
 import OurValues from './_OurValues'
 import OurPrinciples from './_OurPrinciples'
 import Hero from './components/_hero'
 import OurLeadership from './_OurLeadership'
 import DerivNumbers from './_DerivNumbers'
+import EmblaCarousel from './carousel/_Carousel'
+import AboutUsBanner from './_AboutUsBanner'
+import device from 'themes/device'
+import { SEO } from 'components/containers'
+import Layout from 'components/layout/layout'
+import { localize, WithIntl } from 'components/localization'
 
 const StartSeparator = styled.div`
     width: 0;
@@ -48,7 +50,9 @@ const AboutUs = (): React.ReactNode => {
             <EndSeparator />
             <OurPrinciples />
             <OurLeadership />
+            <AboutUsBanner />
             <DerivNumbers />
+            <EmblaCarousel />
         </Layout>
     )
 }

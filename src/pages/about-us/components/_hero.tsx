@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Container, Flex } from 'components/containers'
 import { Header, QueryImage } from 'components/elements'
 import device from 'themes/device.js'
+import { localize } from 'components/localization'
 import desktop_bg from 'images/common/about/about_us_bg_desktop.png'
 import mobile_bg from 'images/common/about/about_us_bg_mobile.png'
 
@@ -63,21 +64,20 @@ const StyledHeaderDesktopAbout = styled(Header)`
     position: absolute;
     height: 195.52px;
     top: 90px;
-    margin-right: 320px;
     font-size: 210px;
     letter-spacing: 8px;
     z-index: 3;
 `
 
-const StyledHeaderDesktopUs = styled(Header)`
-    position: absolute;
-    height: 195.52px;
-    top: 90px;
-    font-size: 210px;
-    letter-spacing: 8px;
-    z-index: 1;
-    margin-right: -770px;
-`
+// const StyledHeaderDesktopUs = styled(Header)`
+//     position: absolute;
+//     height: 195.52px;
+//     top: 90px;
+//     font-size: 210px;
+//     letter-spacing: 8px;
+//     z-index: 1;
+//     margin-right: -770px;
+// `
 
 const StyledFlex = styled(Flex)`
     height: 400px;
@@ -110,11 +110,8 @@ const Hero = () => {
                         />
                         <FlexHeader>
                             <StyledHeaderDesktopAbout color="white" align="center">
-                                About
+                                {localize('About us')}
                             </StyledHeaderDesktopAbout>
-                            <StyledHeaderDesktopUs color="white" align="center">
-                                us
-                            </StyledHeaderDesktopUs>
                         </FlexHeader>
                     </StyledFlex>
                 </DesktopWrapper>
@@ -122,7 +119,7 @@ const Hero = () => {
                     <Flex fd="column">
                         <QueryImage data={data['about_us_logo']} alt="example" />
                         <StyledHeader color="white" align="center" mt="40px">
-                            About us
+                            {localize('About us')}
                         </StyledHeader>
                     </Flex>
                 </MobileWrapper>
