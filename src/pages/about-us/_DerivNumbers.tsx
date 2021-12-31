@@ -10,8 +10,6 @@ const StyledSection = styled(SectionContainer)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 16px 120px;
-    background-color: var(--color-white);
 
     @media ${device.tablet} {
         padding: 40px 16px;
@@ -19,9 +17,9 @@ const StyledSection = styled(SectionContainer)`
 `
 
 const StyledFlex = styled(Flex)`
-    margin: 0 2rem;
-    max-width: 1200px;
-    justify-content: space-around;
+    /* margin: 0 2rem; */
+    /* max-width: 1200px; */
+    /* justify-content: space-around; */
 
     @media ${device.laptop} {
         flex-direction: column;
@@ -104,8 +102,8 @@ const NumberText = styled(Text)`
 
 const DerivNumbers = () => {
     return (
-        <StyledSection>
-            <StyledFlex>
+        <StyledSection padding="200px 16px 120px">
+            <StyledFlex margin="0 2rem" max_width="1200px" jc="space-around">
                 <TitleSection>
                     <TitleHeader as="h6" color="black-2" align="left" type="unset">
                         {localize('Deriv in numbers')}

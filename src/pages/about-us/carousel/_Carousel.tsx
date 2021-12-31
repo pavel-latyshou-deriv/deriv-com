@@ -67,48 +67,23 @@ const CarouselSlide = styled.div`
         padding-left: 10px;
     }
 
-    &:nth-child(1) {
-        min-width: 384px;
-
-        @media ${device.tablet} {
-            min-width: 328px;
-        }
-    }
-
-    &:nth-child(2) {
-        min-width: 792px;
-
-        @media ${device.tablet} {
-            min-width: 328px;
-        }
-    }
-
+    &:nth-child(1),
     &:nth-child(3) {
         min-width: 384px;
-
         @media ${device.tablet} {
             min-width: 328px;
         }
     }
-
+    &:nth-child(2),
     &:nth-child(4) {
         min-width: 792px;
         @media ${device.tablet} {
             min-width: 328px;
         }
     }
-
-    &:nth-child(5) {
-        min-width: 384px;
-
-        @media ${device.tablet} {
-            min-width: 192px;
-        }
-    }
-
+    &:nth-child(5),
     &:nth-child(6) {
         min-width: 384px;
-
         @media ${device.tablet} {
             min-width: 192px;
         }
