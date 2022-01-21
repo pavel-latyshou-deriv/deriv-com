@@ -35,7 +35,7 @@ const Cryptocurrencies = ({ simple_step_content }) => {
         },
         {
             src: CryptoPairs,
-            text: <Localize translate_text="27+ crypto pairs" />,
+            text: <Localize translate_text="25+ crypto pairs" />,
         },
         {
             src: ZeroCommission,
