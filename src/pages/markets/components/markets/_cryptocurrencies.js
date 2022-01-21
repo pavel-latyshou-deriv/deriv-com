@@ -24,7 +24,7 @@ const Cryptocurrencies = ({ simple_step_content }) => {
         {
             src: Leverage,
             text: is_eu_country ? (
-                <Localize translate_text="1:2 leverage" />
+                <Localize translate_text="1:50 leverage" />
             ) : (
                 <Localize translate_text="1:100 leverage" />
             ),
@@ -35,7 +35,7 @@ const Cryptocurrencies = ({ simple_step_content }) => {
         },
         {
             src: CryptoPairs,
-            text: <Localize translate_text="30+ crypto pairs" />,
+            text: <Localize translate_text="27+ crypto pairs" />,
         },
         {
             src: ZeroCommission,

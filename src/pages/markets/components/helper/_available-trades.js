@@ -6,8 +6,8 @@ import { Header } from 'components/elements'
 import { Localize } from 'components/localization'
 import device from 'themes/device'
 //SVG
-import CFDIcon from 'images/svg/trade-types/cfds.svg'
-import MultipliersIcon from 'images/svg/markets/multipliers.svg'
+import CFDIcon from 'images/svg/trade-types/cfdsnew.svg'
+import MultipliersIcon from 'images/svg/markets/marketsnew.svg'
 import OptionsIcon from 'images/svg/markets/options.svg'
 
 const StyledSection = styled(SectionContainer)`
@@ -75,11 +75,11 @@ const CardContainer = styled(Flex)`
             width: 32px;
             height: 32px;
             margin-right: 1.6rem;
-            opacity: ${(props) => (props.active_tab === props.name ? '1' : '0')};
+            opacity: ${(props) => (props.active_tab === props.name ? '1' : '0.56')};
         }
         h4 {
             color: ${(props) =>
-                props.active_tab === props.name ? 'var(--color-red)' : 'var(--color-black-3)'};
+                props.active_tab === props.name ? 'var(--color-black)' : 'var(--color-black-3)'};
             opacity: ${(props) => (props.active_tab === props.name ? '1' : '0.56')};
         }
         @media ${device.tabletL} {
